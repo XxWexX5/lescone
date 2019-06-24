@@ -1,0 +1,48 @@
+// Função para converter PX - EM
+@function em($valor, $contexto: 16) {
+  $val: ($valor / $contexto) + "em";
+  @return $val;
+}
+
+// cor
+$cor-fundo: #edece4;
+$cor-borda: #c7c2b4;
+$cor-titulo: #a9978d;
+$cor-subtitulo: #898275;
+$cor-texto: #251f21;
+$cor-ativo: #1ab912;
+
+// font-family
+$fonte-1: 'PT Mono', monospace;
+$fonte-2: 'Aref Ruqaa', serif;
+
+// tamanho da fonte
+@mixin tipo-1($tam) {
+  font-family: $fonte-1;
+  @if($tam == 18){
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+  @else if($tam == 24){
+    font-size: em(24);
+    line-height: em(36, 24);
+  }
+}
+
+@mixin tipo-2($tam) {
+  font-family: $fonte-2;
+  @if($tam == 18){
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+  @else if($tam == 24){
+    font-size: em(24);
+    line-height: em(36, 24);
+  }
+}
+
+@mixin box-shadow($box...) {
+  box-shadow: $box;
+  -moz-box-shadow: $box;
+  -webkit-box-shadow: $box;
+}

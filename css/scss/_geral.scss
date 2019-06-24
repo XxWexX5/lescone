@@ -1,0 +1,39 @@
+body {
+  background-color: $cor-fundo;
+  border: 10px solid $cor-borda;
+  color: $cor-texto;
+  @include device(phone){
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  @include tipo-1(18);
+}
+
+h2.titulo {
+  @include tipo-1(18);
+  text-transform: uppercase;
+  margin: 50px 0;
+  &::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 2px;
+    background-color: #251f21;
+    float: right;
+    margin-top: 10px;
+    @include device(tablet) {
+      width: 60%;
+    }
+    @include device(phone) {
+      float: none;
+      margin-bottom: 50px;
+    }
+  }
+}

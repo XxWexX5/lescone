@@ -1,0 +1,22 @@
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $cor-texto;
+  @include box-shadow(0 0 0 10px $cor-texto);
+  color: $cor-fundo;
+  p {
+    @include device(phone) {
+      line-height: 25px;
+      max-width: 250px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  img {
+    float: right;
+    @include device(phone) {
+      float: none;
+      margin: 20px auto 10px;
+    }
+  }
+}

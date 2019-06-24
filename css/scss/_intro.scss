@@ -1,0 +1,78 @@
+span.ativo {
+  background-color: $cor-ativo;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  margin-left: 15px;
+}
+
+section.introducao {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  @include device(phone) {
+    margin-top: 50px;
+  }
+}
+
+img.logo {
+  margin-bottom: 50px;
+}
+
+.conteudoInformacao {
+
+  @include device(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.info {
+  border-right: 2px solid;
+  max-width: 280px;
+  p {
+    padding-bottom: 10px;
+    &:first-child{
+      border-bottom: 2px solid;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+p.telefone {
+    a {
+      color: $cor-subtitulo;
+      &:hover {
+        color: $cor-texto;
+      }
+    }
+    @include device(phone) {
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+}
+
+img.imagemPrincipal {
+  @include device(desktop) {
+    width: 90%;
+  }
+}
+
+.pictograma {
+  &::after {
+    content: '/ / / /';
+    color: #251f21;
+    display: block;
+    font-size: 200px;
+    font-weight: bold;
+    margin-top: 50px;
+    letter-spacing: -25px;
+    padding-left: 18px;
+    max-width: 282px;
+  }
+  @include device(phone) {
+    display: none;
+  }
+}
