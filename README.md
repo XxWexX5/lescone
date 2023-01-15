@@ -1,7 +1,7 @@
 # lescone
 By Wevison Ramalho.
 
-[![image-github.png](https://i.postimg.cc/CxH3TtqY/image-github.png)](https://postimg.cc/K1jqt0fs)
+[![image-github.png](https://i.postimg.cc/qqTcTmnV/image-github.png)](https://postimg.cc/9RLwPYJJ)
 
 Training - HTML, CSS, JavaScript
 
