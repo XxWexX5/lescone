@@ -1,4 +1,4 @@
-# lescone
+# Lescone
 By Wevison Ramalho.
 
 [![image-github.png](https://i.postimg.cc/qqTcTmnV/image-github.png)](https://postimg.cc/9RLwPYJJ)
